@@ -1,5 +1,5 @@
 function Set-Workspace-Folder-Windows {
-  $WorkspaceFolder = Join-Path -Path $Config.WorkspaceDisk -ChildPath "Dev";
+  $WorkspaceFolder = Join-Path -Path $HOME -ChildPath "Dev";
 
   if (-not (Test-Path $WorkspaceFolder)) {
     Write-Host "Creating your development workspace folder in Windows 11:" -ForegroundColor "Green";

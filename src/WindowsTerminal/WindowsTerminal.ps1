@@ -28,7 +28,7 @@ function Set-PowerShell-Profile {
 function Set-WindowsTerminal-Settings {
   $WindowsTerminalSettingsFilePath = Join-Path -Path $env:LOCALAPPDATA -ChildPath "Packages" | Join-Path -ChildPath "Microsoft.WindowsTerminal_8wekyb3d8bbwe" | Join-Path -ChildPath "LocalState" | Join-Path -ChildPath "settings.json";
   $DotfilesWindowsTerminalSettingsPath = Join-Path -Path $DotfilesWorkFolder -ChildPath "WindowsTerminal" | Join-Path -ChildPath "settings.json";
-  $WorkspaceFolder = Join-Path -Path $Config.WorkspaceDisk -ChildPath "Dev";
+  $WorkspaceFolder = Join-Path -Path $HOME -ChildPath "Dev";
 
   Write-Host "Copying Windows Terminal settings:" -ForegroundColor "Green";
   Copy-Item $DotfilesWindowsTerminalSettingsPath -Destination $WindowsTerminalSettingsFilePath;

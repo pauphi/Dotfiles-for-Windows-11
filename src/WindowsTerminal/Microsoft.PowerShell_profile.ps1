@@ -68,8 +68,20 @@ Set-Alias -Name "..." -Value "Set-Location-Two-Times";
 function Set-Location-Three-Times { Set-Location "..\..\.."; };
 Set-Alias -Name "...." -Value "Set-Location-Three-Times";
 
-function List-All { ls -Force };
+function List-All { ls -Force; };
 Set-Alias -Name "la" -Value "List-All";
+
+function Set-Location-Downloads { Set-Location "~/Downloads"; };
+Set-Alias -Name "dl" -Value "Set-Location-Downloads";
+
+function Set-Location-Desktop { Set-Location "~/Desktop"; };
+Set-Alias -Name "dt" -Value "Set-Location-Desktop";
+
+function Set-Location-Documents { Set-Location "~/Documents"; };
+Set-Alias -Name "docs" -Value "Set-Location-Documents";
+
+function Set-Location-Dev { Set-Location "~/Dev"; };
+Set-Alias -Name "dev" -Value "Set-Location-Dev";
 
 function New-Folder-Navigate-To-It {
   param($newFolderName);

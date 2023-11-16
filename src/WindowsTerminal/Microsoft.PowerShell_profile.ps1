@@ -51,7 +51,7 @@ function Invoke-Refresh-WindowsTerminal-Profile {
 Set-Alias -Name "src" -Value "Invoke-Refresh-WindowsTerminal-Profile";
 
 function Invoke-Reload-PowerShell {
-  Reload-PowerShell
+  Reload-PowerShell;
 };
 Set-Alias -Name "reload" -Value "Invoke-Reload-PowerShell";
 
@@ -163,6 +163,13 @@ function Invoke-Git-Commit-Message {
   git commit -m $message;
 };
 Set-Alias -Name "gcmsg" -Value "Invoke-Git-Commit-Message";
+
+function Invoke-Git-Add-And-Commit-Message {
+  param($message);
+
+  git add --all && commit -m $message;
+};
+Set-Alias -Name "gam" -Value "Invoke-Git-Add-And-Commit-Message";
 
 function Invoke-Git-Push-Origin-Current-Branch {
   git push origin HEAD;

@@ -28,3 +28,5 @@ code --install-extension "ms-vscode-remote.remote-containers";
 code --install-extension "ms-vscode-remote.remote-wsl";
 code --install-extension "jock.svg";
 code --install-extension "rangav.vscode-thunder-client";
+code --install-extension "ms-dotnettools.csdevkit";
+code --install-extension "GitHub.copilot";

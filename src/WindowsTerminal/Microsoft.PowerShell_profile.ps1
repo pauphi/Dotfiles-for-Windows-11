@@ -50,6 +50,11 @@ function Invoke-Refresh-WindowsTerminal-Profile {
 };
 Set-Alias -Name "src" -Value "Invoke-Refresh-WindowsTerminal-Profile";
 
+function Invoke-Reload-PowerShell {
+  Reload-PowerShell
+};
+Set-Alias -Name "reload" -Value "Invoke-Reload-PowerShell";
+
 ################################################################################
 #                              Directories Aliases                             #
 ################################################################################
@@ -62,6 +67,9 @@ Set-Alias -Name "..." -Value "Set-Location-Two-Times";
 
 function Set-Location-Three-Times { Set-Location "..\..\.."; };
 Set-Alias -Name "...." -Value "Set-Location-Three-Times";
+
+function List-All { ls -Force };
+Set-Alias -Name "la" -Value "List-All";
 
 function New-Folder-Navigate-To-It {
   param($newFolderName);

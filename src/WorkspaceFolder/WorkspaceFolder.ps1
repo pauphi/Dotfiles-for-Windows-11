@@ -1,5 +1,5 @@
 function Set-Workspace-Folder-Windows {
-  $WorkspaceFolder = Join-Path -Path $Config.WorkspaceDisk -ChildPath "Workspace";
+  $WorkspaceFolder = Join-Path -Path $Config.WorkspaceDisk -ChildPath "Dev";
 
   if (-not (Test-Path $WorkspaceFolder)) {
     Write-Host "Creating your development workspace folder in Windows 11:" -ForegroundColor "Green";
@@ -9,7 +9,7 @@ function Set-Workspace-Folder-Windows {
 
 function Set-Workspace-Folder-Ubuntu {
   Write-Host "Creating your development workspace folder in Ubuntu:" -ForegroundColor "Green";
-  wsl mkdir -p -v ~/Workspace;
+  wsl mkdir -p -v ~/Dev;
 }
 
 Set-Workspace-Folder-Windows;

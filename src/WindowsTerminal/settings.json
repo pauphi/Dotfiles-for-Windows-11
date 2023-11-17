@@ -1,4 +1,5 @@
 {
+  "$help": "https://aka.ms/terminal-documentation",
   "$schema": "https://aka.ms/terminal-profiles-schema",
   "actions": [
     {
@@ -12,7 +13,7 @@
     {
       "command": {
         "action": "splitPane",
-        "split": "horizontal",
+        "split": "down",
         "splitMode": "duplicate"
       },
       "keys": "alt+shift+h"
@@ -20,7 +21,7 @@
     {
       "command": {
         "action": "splitPane",
-        "split": "vertical",
+        "split": "right",
         "splitMode": "duplicate"
       },
       "keys": "alt+shift+v"
@@ -30,10 +31,15 @@
   "copyOnSelect": false,
   "defaultProfile": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
   "experimental.detectURLs": false,
+  "firstWindowPreference": "persistedWindowLayout",
   "focusFollowMouse": true,
+  "newTabMenu": [
+    {
+      "type": "remainingProfiles"
+    }
+  ],
   "profiles": {
     "defaults": {
-      "acrylicOpacity": 0.85,
       "antialiasingMode": "cleartype",
       "bellStyle": "taskbar",
       "colorScheme": "One Half Dark",
@@ -41,8 +47,9 @@
       "experimental.retroTerminalEffect": false,
       "font": {
         "face": "Hack Nerd Font",
-        "size": 12
+        "size": 12.0
       },
+      "opacity": 85,
       "useAcrylic": true
     },
     "list": [
@@ -50,18 +57,9 @@
         "commandline": "powershell.exe -nologo",
         "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
         "hidden": false,
-        "name": "Windows PowerShell",
-        "startingDirectory": __STARTING_WINDOWS_DIRECTORY__
+        "name": "Windows PowerShell"
       },
       {
-        "guid": "{07b52e3e-de2c-5db4-bd2d-ba144ed6c273}",
-        "hidden": false,
-        "name": "Ubuntu-20.04",
-        "source": "Windows.Terminal.Wsl",
-        "startingDirectory": __STARTING_UBUNTU_DIRECTORY__
-      },
-      {
-        "commandline": "cmd.exe",
         "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
         "hidden": true,
         "name": "Command Prompt"
@@ -283,5 +281,6 @@
       "yellow": "#808000"
     }
   ],
+  "themes": [],
   "useAcrylicInTabRow": true
 }

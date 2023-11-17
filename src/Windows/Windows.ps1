@@ -155,6 +155,15 @@ Uninstall-AppPackage "Microsoft.Getstarted";
 Uninstall-AppPackage "Microsoft.GetHelp";
 Uninstall-AppPackage "Microsoft.WindowsFeedbackHub";
 Uninstall-AppPackage "Microsoft.MicrosoftSolitaireCollection";
+Uninstall-AppPackage "Facebook.Facebook";
+Uninstall-AppPackage "TuneIn.TuneInRadio";
+Uninstall-AppPackage "Microsoft.MinecraftUWP";
+Uninstall-AppPackage "*Twitter";
+Uninstall-AppPackage "*Bing*";
+Uninstall-AppPackage "Microsoft.SkypeApp";
+Uninstall-AppPackage "*XBox*";
+Uninstall-AppPackage "Microsoft.MixedReality.Portal";
+Uninstall-AppPackage "Microsoft.Microsoft3DViewer";
 
 Set-WindowsExplorer-ShowFileExtensions;
 Set-WindowsFileExplorer-StartFolder;
